@@ -1,26 +1,35 @@
 {
-  "name": "node-algo-practice",
-  "version": "1.0.0",
-  "description": "Package with training material outcomes for Algorithm approach to problem-solving.",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest --env=Local"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brunoteixeirasilva/node-algo-practice.git"
-  },
-  "keywords": [
-    "node",
-    "algorithm",
-    "practice",
-    "training",
-    "data"
-  ],
-  "author": "bruno.teixeira.silva@gmail.com",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/brunoteixeirasilva/node-algo-practice/issues"
-  },
-  "homepage": "https://github.com/brunoteixeirasilva/node-algo-practice#readme"
+	"name": "node-algo-practice",
+	"version": "1.0.0",
+	"description": "Package with training material outcomes for Algorithm approach to problem-solving.",
+	"main": "src/index.js",
+	"type": "commonjs",
+	"scripts": {
+		"test": "jest --env=Local",
+		"build": "npx babel src --out-dir dist",
+		"watch": "npm run build --watch",
+		"start": "npm run build && node dist/index.js --env=Local"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/brunoteixeirasilva/node-algo-practice.git"
+	},
+	"keywords": [
+		"node",
+		"algorithm",
+		"practice",
+		"training",
+		"data"
+	],
+	"author": "bruno.teixeira.silva@gmail.com",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/brunoteixeirasilva/node-algo-practice/issues"
+	},
+	"homepage": "https://github.com/brunoteixeirasilva/node-algo-practice#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.21.0",
+		"@babel/core": "^7.21.3",
+		"@babel/preset-env": "^7.20.2"
+	}
 }
