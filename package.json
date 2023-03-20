@@ -1,0 +1,26 @@
+{
+  "name": "node-algo-practice",
+  "version": "1.0.0",
+  "description": "Package with training material outcomes for Algorithm approach to problem-solving.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=Local"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoteixeirasilva/node-algo-practice.git"
+  },
+  "keywords": [
+    "node",
+    "algorithm",
+    "practice",
+    "training",
+    "data"
+  ],
+  "author": "bruno.teixeira.silva@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoteixeirasilva/node-algo-practice/issues"
+  },
+  "homepage": "https://github.com/brunoteixeirasilva/node-algo-practice#readme"
+}
